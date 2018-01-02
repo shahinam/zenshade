@@ -5,6 +5,7 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {
-      "drupal/zen": "^7.0"
+        "drupal/zen": "^7.0",
+        "drupal/components": "^1.0"
     }
 }
