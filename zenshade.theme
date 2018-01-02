@@ -1,0 +1,97 @@
+<?php
+/**
+ * @file
+ * Contains the theme's functions to manipulate Drupal's default markup.
+ *
+ * Complete documentation for this file is available online.
+ * @see https://drupal.org/node/1728096
+ */
+
+
+/**
+ * Override or insert variables into the maintenance page template.
+ *
+ * @param array $variables
+ *   Variables to pass to the theme template.
+ * @param string $hook
+ *   The name of the template being rendered ("maintenance_page" in this case.)
+ */
+function zenshade_preprocess_maintenance_page(&$variables, $hook) {
+  // When a variable is manipulated or added in preprocess_html or
+  // preprocess_page, that same work is probably needed for the maintenance page
+  // as well, so we can just re-use those functions to do that work here.
+  zenshade_preprocess_html($variables, $hook);
+  zenshade_preprocess_page($variables, $hook);
+}
+
+/**
+ * Override or insert variables into the html templates.
+ *
+ * @param array $variables
+ *   Variables to pass to the theme template.
+ * @param string $hook
+ *   The name of the template being rendered ("html" in this case.)
+ */
+function zenshade_preprocess_html(&$variables, $hook) {
+
+}
+
+/**
+ * Override or insert variables into the page templates.
+ *
+ * @param array $variables
+ *   Variables to pass to the theme template.
+ * @param string $hook
+ *   The name of the template being rendered ("page" in this case.)
+ */
+function zenshade_preprocess_page(&$variables, $hook) {
+}
+
+
+/**
+ * Override or insert variables into the region templates.
+ *
+ * @param array $variables
+ *   Variables to pass to the theme template.
+ * @param string $hook
+ *   The name of the template being rendered ("region" in this case.)
+ */
+function zenshade_preprocess_region(&$variables, $hook) {
+
+}
+
+/**
+ * Override or insert variables into the block templates.
+ *
+ * @param array $variables
+ *   Variables to pass to the theme template.
+ * @param string $hook
+ *   The name of the template being rendered ("block" in this case.)
+ */
+function zenshade_preprocess_block(&$variables, $hook) {
+
+}
+
+/**
+ * Override or insert variables into the node templates.
+ *
+ * @param array $variables
+ *   Variables to pass to the theme template.
+ * @param string $hook
+ *   The name of the template being rendered ("node" in this case.)
+ */
+function zenshade_preprocess_node(&$variables, $hook) {
+
+}
+
+/**
+ * Override or insert variables into the comment templates.
+ *
+ * @param array $variables
+ *   Variables to pass to the theme template.
+ * @param string $hook
+ *   The name of the template being rendered ("comment" in this case.)
+ */
+function zenshade_preprocess_comment(&$variables, $hook) {
+
+}
