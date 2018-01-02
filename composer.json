@@ -1,0 +1,10 @@
+{
+    "name": "shahinam/zenshade",
+    "description": "A reusable theme based on popular Zen theme.",
+    "type": "drupal-theme",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+      "drupal/zen": "^7.0"
+    }
+}
